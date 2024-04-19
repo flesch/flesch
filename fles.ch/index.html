@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>John Flesch – Staff Software Engineer</title>
+<meta name="description" content="John Flesch – Staff Software Engineer focused on Developer Experience, AI-augmented workflows, and secure financial systems." />
+<meta name="theme-color" content="#0f1729" />
+<link rel="icon" href="https://github.com/flesch.png" type="image/png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.bunny.net/css?family=proxima-nova:400,600" rel="stylesheet" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://fles.ch/" />
+<meta property="og:title" content="John Flesch – Staff Software Engineer" />
+<meta property="og:description" content="Building tools for builders. Modernizing platforms. Raising engineering standards." />
+<meta property="og:image" content="https://github.com/flesch.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="John Flesch – Staff Software Engineer" />
+<meta name="twitter:description" content="Building tools for builders. Modernizing platforms. Raising engineering standards." />
+<meta name="twitter:image" content="https://github.com/flesch.png" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "John Flesch",
+  "jobTitle": "Staff Software Engineer",
+  "url": "https://fles.ch/",
+  "image": "https://github.com/flesch.png",
+  "sameAs": [
+    "https://github.com/flesch",
+    "https://www.linkedin.com/in/johnflesch"
+  ]
+}
+</script>
+<style>
+  :root {
+    --bg: #0f1729;
+    --surface: #121a2b;
+    --text: #f9fafb;
+    --muted: #9ca3af;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: 'Proxima Nova', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    text-align: center;
+    line-height: 1.6;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  main {
+    position: relative;
+    z-index: 2;
+  }
+
+  header {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.3rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .headline {
+    margin-top: 0.75rem;
+    font-size: 1.1rem;
+    color: var(--muted);
+  }
+
+  .links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .links a:hover {
+    opacity: 0.8;
+  }
+
+  .download-btn {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
+  }
+
+  .download-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+  }
+
+  .last-updated {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  /* Preview Section */
+
+  .pdf-wrapper {
+    max-width: 1000px;
+    margin: 4rem auto 3rem;
+    padding: 0 1.25rem;
+    position: relative;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    background-color: #ffffff;
+    padding: 6px;
+
+    box-shadow:
+      0 0 0 1px #e5e7eb inset,
+      0 25px 50px rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -75px;
+    z-index: 10;
+  }
+
+  .pdf-container {
+    margin-top: 75px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--surface);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  }
+
+  .resume-preview {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+
+    opacity: 0;
+    transform: translateY(8px);
+    animation: fadeIn 0.6s ease forwards;
+
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .preview-link:hover .resume-preview {
+    transform: scale(1.02);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  a:focus-visible, .download-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .resume-preview {
+      animation: none;
+      opacity: 1;
+      transform: none;
+    }
+    .download-btn {
+      transition: none;
+    }
+    .preview-link:hover .resume-preview {
+      transform: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .avatar {
+      width: 110px;
+      height: 110px;
+      top: -55px;
+    }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>John Flesch</h1>
+    <p class="headline">
+      Staff Software Engineer · Developer Experience · Secure Financial Systems
+    </p>
+    <nav class="links" aria-label="Social links">
+      <a href="https://github.com/flesch" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/johnflesch" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </nav>
+    <a href="./john-flesch-staff-engineer-2026.pdf" download class="download-btn">Download Resume (PDF)</a>
+  </header>
+
+  <div class="pdf-wrapper">
+    <img src="https://github.com/flesch.png" alt="John Flesch Avatar" class="avatar" />
+
+    <div class="pdf-container">
+      <a href="./john-flesch-staff-engineer-2026.pdf" target="_blank" class="preview-link"><img src="./john-flesch-staff-engineer-2026.webp" alt="Preview of John Flesch's resume" class="resume-preview" /></a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
